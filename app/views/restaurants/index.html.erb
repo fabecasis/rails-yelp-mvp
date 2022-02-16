@@ -1,0 +1,9 @@
+<div class="p-5 mb-4 bg-light rounded-3">
+  <h1>Restaurants Index</h1>
+
+  <ul>
+    <% @restaurants.each do |restaurant| %>
+      <li><%= restaurant.name %> - <%= restaurant.address %> - <%= restaurant.category %> - <%= link_to "View", restaurant_path(restaurant) %></li>
+    <% end %>
+  </ul>
+</div>
